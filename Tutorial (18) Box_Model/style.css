@@ -1,0 +1,21 @@
+.box{
+    background-color:skyblue;
+}
+.box1{
+    color: yellow;
+    padding:10px;
+    margin:10px;
+    border:2px solid black;
+    height: 50px;
+    width:50 px;
+    box-sizing: border-box;
+}
+.box2{
+    color: blue;
+    padding:15px;
+    margin:15px;
+    border:2px solid black;
+    height: 50px;
+    width:50 px;
+    box-sizing: border-box;
+}
