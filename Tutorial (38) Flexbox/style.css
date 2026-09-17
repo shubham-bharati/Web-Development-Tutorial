@@ -1,0 +1,47 @@
+.container{
+border: 2px solid black;
+display: flex;
+height: 80vh;
+/* justify-content :space-evenly; (text me space dene ke liyeh  */
+align-items: center; /*(Ek line ko ceter karne ke  liye align-item ka use hota hai )   */
+/* flex-direction: column-reverse; (niche se upar) */
+/* flex-direction: row; (left to right )  */
+/* flex-direction: row-reverse; (right to left) */
+ flex-direction: row; /* (upar se niche) */
+ /* flex-wrap: wrap; (text overflow kar kare pahle line me to use dusari line me wrap or enter karane ke liye use hota hai */
+ /* flex-wrap: wrap-reverse; (ye reverse chalta hai niche se upar ) */
+ align-content: center;   /*(Content line ko ceter karne ke  liye align-item ka use hota hai) */
+/* gap: 20px; */
+/* row-gap: 20px;
+column-gap: 5px; */
+gap: 20px 5px; /* (shortcut row column) */
+}
+.item{
+    /* flex-grow: 1; */
+    height: 32px;
+    width: 32px;
+    background-color: rgb(120, 230, 120);
+    border: 2px solid black;
+    /* margin: 4px; (use gap element ) */
+    text-align: center;
+}
+.item5{
+    align-self: flex-start;
+}
+.item1{
+    /* flex-grow: 3; (kisi ek item ka size other item ke dogune hote jata hai ) */
+    /* flex-shrink: 2; ( page chhota hone pr 2 guna srink ho jayega wo item ) */
+    align-self: flex-end;
+}
+/* (Defalut item  ( jaise = order-0 or none ) zero hota hai  ) */
+/* (jitna  kam  ( jaise = order-1) utna pahle me chipkega item ) */
+/* .order-1{  
+    order: 1;
+} */
+/* .order-2{
+    order: 2;
+} */
+/* (jitna jyada ( jaise = order-100) utna last me chipkega item ) */
+/* .order-3{   
+        order: 5;
+    } */
