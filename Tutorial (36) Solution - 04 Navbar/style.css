@@ -1,0 +1,31 @@
+*{
+    margin: 0;padding: 0;
+}
+:root{
+     --primary-color:rgba(20, 116, 40, 0.884);
+     --text-color: white;
+     --secondary-color:rgb(203, 240, 215);
+}
+ /* :root{
+     --primary-color:rgb(241, 40, 40);
+     --text-color: white;
+     --secondary-color:rgb(238, 178, 178);
+} */
+body{
+     background-color: var(--secondary-color);
+}
+nav{
+    background-color:var(--primary-color);
+    padding: 8px 0px;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    padding: 23px;
+    margin: 8px;
+    font-weight: bolder;
+}
+ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
