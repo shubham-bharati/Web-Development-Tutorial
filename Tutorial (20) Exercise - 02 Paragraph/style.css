@@ -1,0 +1,11 @@
+div :first-child {
+    background-color: yellow;
+    color: red;
+}
+div :last-child {
+    color :white;
+    background-color: blue; 
+}
+div > p {
+    background-color: rgb(23, 255, 23);
+}
