@@ -1,0 +1,13 @@
+h1{
+    color : green;
+}
+.yellow {
+    color : yellow;
+}
+.cred{
+     color: red;
+}
+/* last privority always apply on the text */
+.cpurple{
+    color: purple;
+}
