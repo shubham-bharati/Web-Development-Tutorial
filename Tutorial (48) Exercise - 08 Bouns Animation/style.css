@@ -1,0 +1,56 @@
+.container{
+    background-color: rgb(4, 69, 30);
+    width: 70vw;
+    height: 70vh;
+    position: relative;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(68, 244, 9);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    animation: 15s  1s infinite bouncemove alternate;
+}
+@keyframes bouncemove {
+    0%{
+        left: 0px;
+        bottom: 0px;
+    }
+    12.5%{
+        left: 12.5%;
+        bottom: 443px;
+    }
+    25%{
+        left: 25%;
+        bottom: 0px;
+    }
+    37.5%{
+        left: 37.5%;
+        bottom: 443px;
+    }
+    50%{
+        left: 50%;
+        bottom: 0px;
+    }   
+    62.5%{
+        left: 62.5%;
+        bottom: 443px;
+    }
+    75%{
+        left: 75%;
+        bottom: 0px;
+    }
+    87.5%{
+        left: 87.5%;
+        bottom: 443px;
+    }
+    100%{
+        left: 100%;
+        bottom: 0px;
+        transform:translateX(-100%);
+    }
+}
+
