@@ -1,0 +1,44 @@
+/* Element selectors */
+div {
+    background-color:rgb(255, 255, 19);
+}
+/* Class selectors */
+.red{
+    background-color: red;
+}
+/* Id selectors */
+#blue {
+    background-color: blue;
+}
+/* child selectors (> : direct children) */
+div > p {
+     color:red;
+     background-color: black;
+}
+div > h3 {
+    color:green;
+    background-color: yellow;
+}
+/* Descendant selectors (space) */
+div p1 {
+    color: rgb(228, 114, 114) ;
+    background-color: rgb(11, 255, 11);
+}
+/* Universal selector */
+* {
+    margin: 10px;
+    padding: 10px;
+}
+/* pseudo selectors */
+a  visited {
+    color: blue;
+}
+a:link {
+    color : green;
+}
+a:hover {
+    color: red;
+}
+p:first-child{
+    background-color: skyblue;
+}
