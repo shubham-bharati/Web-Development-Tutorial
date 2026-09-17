@@ -1,0 +1,7 @@
+nav ul li {
+    list-style: devanagari;
+    list-style-type:square;
+    background-color: rgb(0, 255, 0);
+    list-style-position: inside;
+    border: 2px solid black;
+}
