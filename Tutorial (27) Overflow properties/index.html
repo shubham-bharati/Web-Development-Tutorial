@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 250px;
+            height: 150px;
+            padding: 15px;
+            background: white;
+            border: 3px solid #2563eb;
+            border-radius: 10px;
+        }
+
+        /* Content bahar nikal sakta hai */
+        .visible {
+            overflow: visible;
+        }
+
+        /* Extra content hide ho jayega */
+        .hidden {
+            overflow: hidden;
+        }
+
+        /* Scrollbar hamesha available */
+        .scroll {
+            overflow: scroll;
+        }
+
+        /* Zarurat padne par scrollbar */
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Overflow Property</h1>
+
+    <div class="container">
+
+        <div class="box visible">
+            <h2>Visible</h2>
+            <p>
+                This is a very long paragraph.
+                The extra content can come outside
+                the box because overflow is visible.
+            </p>
+        </div>
+
+        <div class="box hidden">
+            <h2>Hidden</h2>
+            <p>
+                This is a very long paragraph.
+                Extra content will be hidden
+                when it goes outside the box.
+            </p>
+        </div>
+
+        <div class="box scroll">
+            <h2>Scroll</h2>
+            <p>
+                This is a very long paragraph.
+                Scrollbars will appear so you can
+                scroll and read the extra content.
+            </p>
+        </div>
+
+        <div class="box auto">
+            <h2>Auto</h2>
+            <p>
+                This is a very long paragraph.
+                Scrollbar will appear only when
+                the content actually overflows.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
