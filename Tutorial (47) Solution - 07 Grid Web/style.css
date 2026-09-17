@@ -1,0 +1,138 @@
+.logo{
+    width: 40px;
+    height: 23px;
+}
+nav{
+    display: flex;
+ justify-content: space-around;
+    align-items: center; /* only one row ke liye iska use hota hai */
+    /* align-content: center;  */ /* multiple row ke liye */
+    font-family: Inter;
+}
+.logo img{
+    width: 164px;
+}
+.right ul{
+    display: flex;
+    gap: 34px;
+}
+.right ul li{
+    list-style: none;  
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.right ul li span{
+    padding: 0 9px;
+}
+.right ul :last-child{
+    width: 16px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;;
+    gap: 23px;
+    margin: 70px;
+    font-family: sans-serif;
+}
+.first span{
+    font-size: 40px;
+}
+.first p{
+    width: 50vw;
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    width: 300px;
+    height: 50px;
+    background-color: #30b4dc;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.download{
+    display: flex;
+     font-family:sans-serif;
+     align-items: center;
+    gap: 5px;
+    margin:20px
+}
+
+.download :nth-child(2){
+    font-size: 23px;
+}
+.download :nth-child(1){
+    width: 50px;
+    padding: 0 5px;
+}
+.small{
+    font-size: 16px;
+     font-family:sans-serif;
+}
+.second{
+    max-width: 75vw;
+    margin: auto;
+
+}
+.item{
+    padding:30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    margin:10px;
+    text-align: center;
+}
+.item-lang{
+    font-family:sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+.blue{
+    background-color: rgb(32, 140, 186);
+    width: 9vw;
+    height: 45px;
+    font-size: 14px;
+}
+.green{
+    background-color: rgb(24, 123, 42);
+    width: 9vw;
+    height: 45px;
+    font-size: 16px;
+}
+.grid{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+}
+@media screen and (max-width: 1417px){
+    .grid{
+        display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+    }
+    .blue{
+    background-color: rgb(32, 140, 186);
+    width: 20vw;
+    height: 45px;
+    font-size: 15px;
+}
+.green{
+    background-color: rgb(24, 123, 42);
+    width: 20vw;
+    height: 45px;
+    font-size: 15px;
+}
+}
