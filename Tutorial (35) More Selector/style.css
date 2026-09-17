@@ -1,0 +1,34 @@
+/* .box:first-child{
+    background-color: green;
+}
+    .boxes::before {
+    content: Hello html;
+} */
+  .boxes::before { /* pseudo element */
+    content: "Hello Html Webpages ";
+    color: green;
+}
+.boxes::after{
+    content: "Last Html Webpage";
+    color: rgb(236, 7, 7);
+}
+.box::first-line{
+    color:rgb(60, 0, 255)
+}
+.box::first-letter{
+    color: rgb(22, 239, 255);
+    font-size: 35px;
+}
+[data-color="primary"]{
+    background-color: yellow;
+}
+/* text select karne pr background color and color changes */
+::selection{
+    color: rgb(2, 237, 119);
+    background-color: rgb(223, 9, 63);
+}
+input::placeholder{
+    color: rgb(114, 112, 112);
+    background-color: aliceblue;
+    font-size: 15px;    
+}
