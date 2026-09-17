@@ -1,0 +1,33 @@
+.container{
+    background-color: rgb(4, 69, 30);
+    width: 70vw;
+    height: 70vh;
+    position: relative;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(68, 244, 9);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    animation: 3s linear  infinite shubhamx ,1s ease-out shubhamy infinite alternate;;
+    
+}
+@keyframes shubhamx {
+    from{
+          left:0%;
+    }
+    to{
+          left:100%;
+    }
+}
+@keyframes shubhamy {
+    from{
+         bottom:0%;
+    }
+    to{
+        bottom:100%;
+    }
+}
