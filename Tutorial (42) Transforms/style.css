@@ -1,0 +1,29 @@
+.container{
+width: 100vw;
+height: 80vh;
+border: 2px solid black;
+}
+.box{
+    height:50px;
+    width: 50px;
+    background-color: aqua;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box element ko rotate karne ke liye x , y , z direction ke liye  */
+    /* transform: rotate(45deg); */
+    /* transform: rotate(0.25turn); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotatey(45deg); */
+    /* transform: rotatez(45deg); */
+    /* box element ke size ko bada ya chhota karne ke liye  */
+    /* transform: scale(5);  */  
+    /* transform: scalex(5); */ /* only x direction long ya short hoga*/
+    /* transform: scaley(5); */ /* only y direction long ya short hoga*/
+    /* transform: scale3d(); 3d ke liye  */
+    /* transform: skew(5deg); */ /* ise bs y direction me kr sakte hai but x direction me nahi */
+    /* transform: translate(100%); */
+    /* transform: translatey(100%); */ /* y ditection me apne jagah se apne body ke utana persantage tranfer hoga */
+    /* transform: translatex(100%); */
+}
