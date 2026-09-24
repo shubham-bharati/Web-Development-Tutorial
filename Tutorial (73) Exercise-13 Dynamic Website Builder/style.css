@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    gap: 12px;
+    margin: 15px;
+    width: 700px;
+}
+
+.thumb {
+    position: relative;  /* relative positioning is used to position the duration text at the bottom right corner of the thumbnail image */
+}
+
+.thumb img {
+    width: 200px;
+    height: 113px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.duration {
+    position: absolute;  /* absolute positioning is used to position the duration text at the bottom right corner of the thumbnail image */
+    bottom: 6px;
+    right: 6px;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.content h3 {
+    margin: 0;
+    font-size: 18px;
+
+}
+
+.content p {
+    color: gray;
+    margin-top: 8px;
+}
