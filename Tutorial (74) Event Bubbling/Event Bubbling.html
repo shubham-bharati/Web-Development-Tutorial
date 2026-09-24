@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bobbling</title>
+    <style>
+        .child {
+            background-color: rgb(216, 213, 213);
+            border: 2px solid black;
+            padding: 34px;
+            margin: 34px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: rgba(3, 243, 7, 0.685);
+            padding: 14px;
+            margin: 14px;
+            ;
+        }
+
+        .container {
+            background-color: rgba(233, 83, 8, 0.582);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child"> I am a Child </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Chlid was clicked!")  // bs child click hoga aur yahi active hoga 
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("ChlidContainer was clicked!")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("container was clicked!")
+        })
+
+        function getRandomColor() {  // formula random number ka =  a + r(b-a) ,  r = random number.
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1},${val2},${val3})`
+        }
+
+        // setInterval(() => {
+        //     document.querySelector(".childContainer").style.background = getRandomColor();
+        // }, 1000);
+
+      let a = setInterval(() => {
+            document.querySelector(".childContainer ").style.background = getRandomColor();
+        }, 100);
+        console.log(a)  //console  me jakar clearInterval(1) enter karne pr wahi color stop  ho jayega jo live tha 
+    
+       /* let a = setTimeout(() => { // ek bar color change hoga bs time ke hisab se
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 1000);                 //console  me jakar clearTimeout(1) enter karne pr wahi color stop  ho jayega jo live tha 
+        console.log(a)  
+        */
+    </script>
+</body>
+
+</html>
